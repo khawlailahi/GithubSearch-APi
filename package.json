@@ -1,0 +1,25 @@
+{
+  "name": "githubsearch-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start server": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khawlailahi/GithubSearch-APi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khawlailahi/GithubSearch-APi/issues"
+  },
+  "homepage": "https://github.com/khawlailahi/GithubSearch-APi#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "ioredis": "^4.24.2",
+    "redis": "^3.0.2"
+  }
+}
