@@ -1,0 +1,35 @@
+.grid-container{
+display: grid;
+  grid-gap: 50px ;
+  grid-template-columns: 20% 20% 20%;
+  padding: 10px;
+
+}
+.grid-item{
+border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+   margin: 0 auto;
+}
+.image{
+width: 80%;
+height: 70%;
+margin: 0 auto;
+}
+.userInfo{
+
+}
+.flexOwner{
+    display: flex;
+    flex-direction: row;
+}
+.Smallimage{
+    width:15%;
+    height: 15%;
+    margin-right: 4%;
+    margin-top: 4%;
+    border-radius: 20px;
+}
+.repo{
+width:40%;
+height: 40%;
+}

@@ -1,0 +1,47 @@
+.wrapper {
+ display: flex;
+  justify-content: center;
+}
+.container2{
+ margin-top: 5%;
+}
+
+ .logo {
+  height: 7vh;
+
+}
+
+.App-logo{
+ margin: 1%;
+}
+.topDiv{
+  display: flex;
+  flex-direction: row;
+}
+
+#description{
+  margin-top: -8%;
+}
+#dropdown{
+  margin-left: 1%;
+  text-align: center;
+
+  width:130px;
+  height:4.5vh ;
+  border: 2px solid rgb(173, 172, 172);
+}
+ option{
+  text-align: center;
+  
+}
+.inputs{
+  margin-left: 1%;
+  width: 30vw;
+}
+#input{
+border: 2px solid rgb(173, 172, 172);
+ padding: 0.5px 20px;
+ height:4.5vh  ;
+  margin: 3px 0;
+  box-sizing: border-box;
+}

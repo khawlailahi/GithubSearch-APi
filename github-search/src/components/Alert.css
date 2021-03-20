@@ -1,0 +1,63 @@
+.container{
+  position: relative;
+  z-index: 0;
+top: 0;
+transform: translate(0,-10%);
+left: 0;
+width: 100vw;
+height: 100vh;
+}
+.background{
+  position: absolute;
+z-index:1;
+/* top: 0;
+left: 0; */
+width: 100%;
+height: 120%;
+background-color: rgb(63, 60, 60);
+    
+}
+.card{
+position: absolute;
+z-index: 2;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+width: 40vw;
+height: 20vh;
+border:1px solid gray;
+border-radius:10px;
+background-color: rgb(248, 242, 242);
+}
+.header{
+    border-radius:10px 10px 0px 0px;
+  background-color: #e71d5a;  
+  width: 38.5vw;
+  height: 8vh;
+  padding: 2%;
+  margin-bottom: 10px;
+  
+}
+.message{
+    text-align: center;
+    font-size:95%;
+    color: white;
+}
+.footer{
+   text-align: center;
+   
+ 
+}
+.button{
+border-radius: 12px;
+font-weight: bold;
+font-size: 15px;
+margin: 10px;
+padding: 6px;
+cursor: pointer;
+ 
+}
+.button:hover{
+    color: white;
+    background-color:rgb(231, 29, 90) ;
+}
