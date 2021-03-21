@@ -3,7 +3,7 @@
 ## Concept 💡 :
 Github Searcher 🔍 For User and Repositories 
 
-<img src= "src/github-search/images/demo.png" width = "1300">
+<img src= "github-search/src/images/demo.png" width = "1300">
 
 
 # Technologies 💻 :
