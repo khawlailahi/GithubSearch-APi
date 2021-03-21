@@ -4,7 +4,7 @@ interface AlertProps {
     message: string;
     onClose: () => void
 }
-
+//Alerts for Errors and for Not found Results
 const Alert: FC<AlertProps> = ({ message, onClose }) => {
     return (
         <div className="container">

@@ -5,7 +5,7 @@ import { DataAction, GithubData, DataError, GET_DATA, SET_LOADING, SET_ERROR } f
 export const getData = (city: object): ThunkAction<void, RootState, null, DataAction> => {
     return async dispatch => {
         try {
-
+            // when the user deletes the search text : empty the data 
             if (Array.isArray(city)) {
                 const resData: [] = []
                 dispatch({
@@ -21,21 +21,19 @@ export const getData = (city: object): ThunkAction<void, RootState, null, DataAc
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(city)
-
                 });
 
+                //case of an Error : dispatch an alert
                 if (!res.ok) {
-
                     const resData: DataError = await res.json();
-                    console.log(resData['err'])
+
                     dispatch({
                         type: SET_ERROR,
                         payload: resData['err']
                     });
                 }
-
+                //Sending the received data to the store 
                 const resData: GithubData = await res.json();
-                console.log(resData)
                 dispatch({
                     type: GET_DATA,
                     payload: resData
@@ -47,6 +45,7 @@ export const getData = (city: object): ThunkAction<void, RootState, null, DataAc
         }
     }
 }
+
 
 export const setLoading = (): DataAction => {
     return {

@@ -1,35 +1,143 @@
 .grid-container{
-display: grid;
-  grid-gap: 50px ;
-  grid-template-columns: 20% 20% 20%;
+  position: absolute;
+  display: grid;
+  grid-gap: 2vw ;
+  grid-template-columns: 25vw 25vw 25vw;
   padding: 10px;
-
+  width: 100vw;
+  justify-content: center;
 }
 .grid-item{
-border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 2px solid rgb(153, 68, 209);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px rgb(172, 95, 216), 1.5px 1.5px 2px rgb(207, 60, 226), 4px 4px 5px rgb(55, 130, 228);
   padding: 20px;
-   margin: 0 auto;
+    margin: 0 auto;
+}
+#id{
+  color: #8e40e7;
+  text-align: center;
+}
+p{
+  font-weight: bold;
+}
+.userName{
+  font-size:100%;
+  font-weight:bold ;
+  color: #8e40e7;
+  text-align: center;
 }
 .image{
-width: 80%;
-height: 70%;
-margin: 0 auto;
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+  border-radius: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .userInfo{
-
+text-align: center;
 }
+
+
+
+
+#userButton {
+  background-image: linear-gradient(to right, #1A2980 0%, #5e1a96  51%, #1A2980  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  font-weight: bolder;
+}
+
+#userButton:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+
 .flexOwner{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .Smallimage{
-    width:15%;
-    height: 15%;
-    margin-right: 4%;
-    margin-top: 4%;
-    border-radius: 20px;
+  width:10%;
+  height: 10%;
+  margin-right: 4%;
+  margin-top: 4%;
+  border-radius: 20px;
 }
 .repo{
-width:40%;
-height: 40%;
+  width:40%;
+  height: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.descriptionDiv{
+  width:95% ;
+  height: 40%;
+}
+.descriptionDiv p {
+  font-size: 90%;
+}
+span{
+  font-weight: bold;
+  color: #26a0da;
+}
+.repoInfo{
+ margin: 3px;
+}
+#reponame{
+  font-weight: bolder;
+  text-align: center;
+  font-size:100%;
+  color: rgb(153, 68, 209);
+}
+
+
+
+#openRepo {
+  background-image: linear-gradient(to right, #9c56bd 0%, #26a0da  51%, #7355a3  100%);
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;  
+  font-weight: bold;          
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+#openRepo:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
+.buttonDiv{
+  display: flex;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width : 768px) {
+  .grid-container{
+     grid-template-columns: 25vw 25vw ;
+    }
+
 }

@@ -1,18 +1,20 @@
 .wrapper {
- display: flex;
+  display: flex;
   justify-content: center;
+  width: 100vw;
 }
 .container2{
- margin-top: 5%;
+  margin-top: 5%;
+
 }
 
- .logo {
+.logo {
   height: 7vh;
 
 }
 
 .App-logo{
- margin: 1%;
+  margin: 3%;
 }
 .topDiv{
   display: flex;
@@ -22,26 +24,48 @@
 #description{
   margin-top: -8%;
 }
+
 #dropdown{
   margin-left: 1%;
   text-align: center;
-
   width:130px;
   height:4.5vh ;
   border: 2px solid rgb(173, 172, 172);
 }
+
  option{
   text-align: center;
   
 }
 .inputs{
-  margin-left: 1%;
-  width: 30vw;
+  margin-left: 4%;
+  margin-top: -1%;
+  width:30vw;
 }
 #input{
-border: 2px solid rgb(173, 172, 172);
- padding: 0.5px 20px;
- height:4.5vh  ;
+  border: 2px solid rgb(173, 172, 172);
+  padding: 0.5px 20px;
+  height:4.6vh  ;
   margin: 3px 0;
+  width: 40%;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width : 768px) {
+
+ #input{
+     grid-template-columns: 25vw 25vw ;
+     width: 50%;    
+}
+#dropdown{
+  margin-left: 1%;
+  text-align: center;
+  width:100px;
+  height:4.5vh ;
+  border: 2px solid rgb(173, 172, 172);
+}
+.App-logo{
+ margin-top: 8%;
+}
+
 }

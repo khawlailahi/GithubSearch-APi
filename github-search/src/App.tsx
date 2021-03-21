@@ -12,7 +12,7 @@ const App: React.FC = () => {
   const githubData = useSelector((state: RootState) => state.DataGit.data);
   const loading = useSelector((state: RootState) => state.DataGit.loading);
 
-  console.log(loading)
+
 
   const error = useSelector((state: RootState) => state.DataGit.error);
   const alertMsg = useSelector((state: RootState) => state.alert.message);
@@ -20,7 +20,7 @@ const App: React.FC = () => {
     <div className="App">
       <Search />
       <br />
-      {loading ? <h2 className="loading">{loading}</h2> : <List data={githubData} />}
+      {loading ? <div className="flexLaod"><h2 className="loading">Laoding ...  </h2> <div className="loader"></div></div> : <List data={githubData} />}
 
       {alertMsg && <Alert message={alertMsg} onClose={() => dispatch(setAlert(''))} />}
       {error && <Alert message={error} onClose={() => dispatch(setError())} />}

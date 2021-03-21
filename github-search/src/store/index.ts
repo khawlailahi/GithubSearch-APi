@@ -5,6 +5,7 @@ import thunk from 'redux-thunk';
 import dataReducer from './reducers/dataReducer';
 import alertReducer from './reducers/alertReducer';
 import typeReducer from './reducers/typeReducer';
+
 const rootReducer = combineReducers({
     DataGit: dataReducer,
     alert: alertReducer,

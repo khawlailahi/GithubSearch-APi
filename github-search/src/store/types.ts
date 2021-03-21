@@ -10,7 +10,6 @@ export interface GithubData {
 }
 
 export interface DataError {
-    // cod: string;
     err: string;
 }
 

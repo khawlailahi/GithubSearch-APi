@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start server": "nodemon index"
+    "startServer": "nodemon index"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,17 @@
   },
   "homepage": "https://github.com/khawlailahi/GithubSearch-APi#readme",
   "dependencies": {
+    "@types/react-redux": "^7.1.16",
     "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
-    "ioredis": "^4.24.2",
-    "redis": "^3.0.2"
+    "node-fetch": "^2.6.1",
+    "react-redux": "^7.2.2",
+    "redis": "^3.0.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0"
   }
 }

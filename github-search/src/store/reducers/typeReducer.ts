@@ -1,7 +1,7 @@
 import { TypeState, TypeAction, SET_TYPE } from "../types";
 
 const initialState: TypeState = {
-    type: ''
+    type: 'users'
 }
 const typeReducer = (state = initialState, action: TypeAction): TypeState => {
     switch (action.type) {

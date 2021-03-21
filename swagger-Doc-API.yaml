@@ -1,0 +1,140 @@
+swagger: "2.0"
+info:
+  description: "This is a sample server to search for github users or github repositories"
+  version: "1.0.0"
+  title: "Github User/Repositories Search"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: "apiteam@swagger.io"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:5000"
+basePath: "/api"
+tags:
+- name: "search"
+  description: "search for repositories or users"
+ 
+
+- name: "ClearCash"
+  description: "Clear Cash of previous search"
+ 
+schemes:
+
+- "http"
+paths:
+  /search:
+    post:
+      tags:
+      - "search"
+      summary: "search for user / repositories"
+      description: ""
+      operationId: "addPet"
+      consumes:
+      - "application/json"
+     
+      produces:
+ 
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: true
+        schema:
+          $ref: "#/definitions/Search"
+      responses:
+        "405":
+          description: "Invalid input: Must include a valid search type: users or repositories"
+          
+        "400":
+          description: "Invalid input: Invalid input: Must include a search text"
+      
+    
+  
+  
+  /clear_cache:
+    
+    delete:
+      tags:
+      - "ClearCash"
+      summary: "Clear cache"
+      description: "Clears the cache of previous search."
+      operationId: "clearcache"
+      produces:
+
+      - "application/json"
+
+      responses:
+        "500":
+          description: "cache not cleared"
+        "200":
+          description: "Cash Cleared"
+
+definitions:
+
+  Search:
+    type: "object"
+    required:
+    - "text"
+    - "type"
+    properties:
+    
+      text:
+        type: "string"
+        description: "name of a repository or name of a user"
+        example: "khawla"
+
+      type:
+        type: "string"
+        description: "type of search : users or repositories"
+
+        example: "repositories"
+  user:
+    type: "object"
+    properties:
+      login:
+        type: "string"
+      id:
+        type: "integer"
+      node_id: 
+        type: "string"
+      avatar_url: 
+        type: "string"
+      gravatar_id: 
+        type: "string"
+      url: 
+        type: "string"
+      html_url: 
+        type: "string"
+      followers_url: 
+        type: "string"
+      following_url: 
+        type: "string"
+      gists_url:
+        type: "string"
+      starred_url: 
+        type: "string"
+      subscriptions_url: 
+        type: "string"
+      organizations_url: 
+        type: "string"
+      repos_url: 
+        type: "string"
+      events_url:
+        type: "string"
+      received_events_url: 
+        type: "string"
+      site_admin:
+        type:  "boolean"
+      score: 
+        type: "integer"
+   
+    
+  ApiResponse:
+    type: "array"
+    items:
+      $ref: "#/definitions/user"
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
