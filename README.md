@@ -23,4 +23,3 @@ Github Searcher 🔍 For User and Repositories
 
 - Open the front end folder : cd github-search 
     * start react with : npm start 
-=> First Time Working with React TypeScript Mix (¬‿¬) 😅
